@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lista de Compras</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1>Lista de Compras</h1>
+        <form action="" onsubmit="return false">
+            <label for="artigo">Artigo:</label>
+            <input type="text" id="artigo" />
+            <label for="quantidade">Quantidade:</label>
+            <input type="text" id="quantidade" />
+            <button id="btn-acrescentar">Acrescentar</button>
+        </form>
+        <div class="listas-container">
+            <div id="lista-on" class="listas">
+                <h4>Itens na Lista de Compras</h4>
+                <ul></ul>
+            </div>
+            <div id="lista-off" class="listas">
+                <h4>Itens Adicionados ao Carrinho</h4>
+                <ul></ul>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

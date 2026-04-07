@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+input {
+    padding: 5px 10px;
+    font-size: 16px;
+    width: 250px;
+}
+
+label {
+    text-align: center;
+    line-height: 32px;
+}
+
+button {
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+#lista-on,
+#lista-off {
+    background: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px black;
+    max-width: 400px;
+}
+
+#lista-off li {
+    text-decoration: line-through;
+    color: grey;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li:hover {
+    background-color: rgb(196, 196, 196);
+    cursor: pointer;
+}
+
+.listas:has(ul:empty) {
+    display: none; /* faz desaparecer a lista, e só aparece quando tiver artigos */
+}
+
+button.mover,
+button.remover {
+    margin-left: 10px;
+    padding: 3px 6px;
+    font-size: 12px;
+}
+
+#btn-acrescentar {
+    background-color: burlywood;
+}
+
+.listas h4 {
+    text-decoration: underline;
+}
+
+.listas-container {
+    display: flex;
+    justify-content: center; /* centra as duas caixas */
+    gap: 20px; /* espaço entre as caixas */
+    margin-top: 20px;
+}
+
+.listas {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* botão de remover o artigo das listas */
+.btn-remover {
+    background: red;
+    color: white;
+    border: none;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+/* botão de remover o artigo das listas ao passar o rato */
+.btn-remover:hover {
+    background: darkred;
+}
